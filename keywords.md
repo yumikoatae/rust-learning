@@ -36,6 +36,16 @@ This file contains a list of keywords and commonly used terms in the Rust ecosys
 - **cargo test**: Runs tests for the project.
 - **cargo doc**: Generates documentation for the project.
 - **cargo update**: Updates the project dependencies.
+- **cargo check**: Checks the code for errors without compiling it. Faster than `cargo build` since it doesn't generate binaries.
+  - Example usage: `cargo check`
+
+## Publishing
+
+- **crates.io**: The Rust community’s package registry, where crates (Rust packages) are published and shared. 
+  - Example usage: You can find and add dependencies from `crates.io` in your `Cargo.toml`.
+
+- **cargo publish**: Command used to publish a crate to `crates.io`. This uploads your crate so others can use it.
+  - Example usage: `cargo publish`
 
 ## Other Terms
 
