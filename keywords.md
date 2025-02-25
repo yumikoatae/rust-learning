@@ -21,6 +21,10 @@ This file contains a list of keywords and commonly used terms in the Rust ecosys
 
 ## Concepts
 
+- **Shadowing**: A variable redeclaration with the same name but different value and/or scope within the same context.
+
+- **Mutability**: The ability for a variable to have its value changed during runtime by marking it as mutable with the mut keyword.
+  
 - **Ownership**: The memory management system in Rust that ensures safety without the need for a garbage collector.
 
 - **Borrowing**: The process of lending references to data, with strict lifetime rules (`lifetimes`) to avoid memory safety issues.
