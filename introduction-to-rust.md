@@ -46,3 +46,38 @@ fn main() {
     }
 }
 ```
+<br>
+
+## Handle optional values
+
+```rust
+let maybe_number = Some(42); // or None in some cases
+if let Some(num) = maybe_number {
+    println!("The number is {}", num);
+} else {
+    println!("No number provided.");
+}
+```
+<br>
+
+## If / Else
+```rust
+let number = 7;
+if number % 2 == 0 {
+    println!("The number is even");
+} else {
+    println!("The number is odd");
+}
+```
+
+<br>
+
+## While loop
+```rust
+let mut x = 0;
+while x < 5 {
+    println!("{}", x);
+    if x == 3 { continue } // skipping iteration when x is equal to 3.
+    x += 1;
+}
+```
