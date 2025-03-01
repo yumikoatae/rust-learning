@@ -81,3 +81,38 @@ while x < 5 {
     x += 1;
 }
 ```
+<br>
+
+## A unit function and return value
+```rust
+// a unit function that doesn't return anything
+fn print_sum(numbers: &[i32]) {
+    let sum = numbers.iter().sum(); // Calculate the sum of elements in slice
+    if sum % 2 == 0 {               // Check if sum is even
+        println!("The sum is even.");
+    } else {
+        println!("The sum is odd.");
+    }
+}
+
+fn main() {
+    let numbers = [1, 2, 3];      // Define a slice of integers
+    print_sum(&numbers);          // Call the unit function with the slice as an argument
+}
+```
+
+## Using panic
+```rust
+fn process_numbers(slice: &[i32]) {
+    for (index, number) in slice.iter().enumerate() {
+        if *number < 0 {
+            panic!("Negative number found at index {}", index); // Stop execution and show error message
+        }
+    }
+}
+
+fn main() {
+    let numbers = [1, 2, 3, -5];   // Include a negative number to trigger the panic
+    process_numbers(&numbers);     // Call function with slice of integers as an argument
+}
+```
