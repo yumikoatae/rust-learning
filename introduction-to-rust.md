@@ -116,3 +116,30 @@ fn main() {
     process_numbers(&numbers);     // Call function with slice of integers as an argument
 }
 ```
+<br>
+
+## Associated Function
+```rust
+impl User {
+    fn new(username: String, email: String, uri: String, active: bool) -> Self {
+        User {
+            username,
+            email,
+            uri,
+            active,
+        }
+    }
+}
+```
+<br>
+
+## Option as a type
+```rust
+fn main() {
+    let age: Option<u8> = Some(25);
+    match age {
+        Some(x) => println!("Age is {}", x),
+        None => println!("No age provided"),
+    }
+}
+```
